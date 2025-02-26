@@ -68,7 +68,7 @@ small {font-size: 0.750rem; /* 12px */}
 
 .dropdown .dropbutton {
     font-size: 16px;
-    border: 1px solid var(--static7);
+    border: 1px solid var(--text);
     outline: none;
     color: var(--text);
     padding: .5em .7em .5em 1em;
@@ -82,7 +82,27 @@ small {font-size: 0.750rem; /* 12px */}
     white-space: nowrap;
     cursor: pointer;
     font-size: var(--p);
+    text-align: right;
 }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background);
+    min-width: 10rem;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--text);
+    padding: 2rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: var(--background);}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 .main {
     display: flex;
