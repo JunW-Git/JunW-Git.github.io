@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
 :root {
 --text: #180f0f;
 --background: #ebe5df;
@@ -5,6 +6,32 @@
 --secondary: #c8b9a6;
 --accent: #b2ab84;
 }
+
+body {
+  font-family: 'Inter';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Inter';
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
 
 .text {
     color: var(--text)
@@ -24,4 +51,44 @@
 
 .accent {
     color: var(--accent)
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: .5rem 12%;
+    align-items: center;
+    position: sticky;
+    background-color: var(--background);
+    z-index: 9997;
+    border-bottom: 1px solid #0000001a;
+}
+
+.dropdown .dropbutton {
+    font-size: 16px;
+    border: 1px solid var(--static7);
+    outline: none;
+    color: var(--text);
+    padding: .5em .7em .5em 1em;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: allease .2s;
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: var(--p);
+}
+
+.main {
+    display: flex;
+    flex-direction: wrap;
+    background: var(--background);
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
 }
