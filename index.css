@@ -85,6 +85,14 @@ small {font-size: 0.750rem; /* 12px */}
     text-align: right;
 }
 
+.dropbutton {
+    display: inline-block;
+}
+
+.dropbutton:hover, .dropbutton:focus {
+    background-color: #2980B9;
+  }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -100,9 +108,19 @@ small {font-size: 0.750rem; /* 12px */}
     display: block;
 }
 
-.dropdown-content a:hover {background-color: var(--background);}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown-content a:hover {
+    background-color: var(--secondary);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 2rem;
+    border-color: #180f0f;
+}
+.dropdown:hover .dropbutton {
+    background-color: #3e8e41;
+    border-radius: 2rem;
+    border-color: #180f0f;
+}
 
 .main {
     display: flex;
