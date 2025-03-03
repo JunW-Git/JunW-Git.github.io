@@ -57,7 +57,7 @@ small {font-size: 0.750rem; /* 12px */}
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 75%;
     padding: .5rem 12%;
     align-items: center;
     position: sticky;
@@ -146,6 +146,7 @@ small {font-size: 0.750rem; /* 12px */}
     margin-left: 10rem;
     margin-right: 10rem;
     margin-top: 5rem;
+    overflow: hidden;
 }
 
 .row {
@@ -155,6 +156,7 @@ small {font-size: 0.750rem; /* 12px */}
     margin-left: 10rem;
     margin-right: 10rem;
     margin-top: 2rem;
+    overflow: hidden; 
 }
 
 .leftbox {
