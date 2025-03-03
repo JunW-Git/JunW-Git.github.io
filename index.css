@@ -66,6 +66,7 @@ small {font-size: 0.750rem; /* 12px */}
     border-bottom: 1px solid #0000001a;
 }
 
+/*
 .dropdown .dropbutton {
     font-size: 16px;
     border: 1px solid var(--text);
@@ -84,43 +85,59 @@ small {font-size: 0.750rem; /* 12px */}
     font-size: var(--p);
     text-align: right;
 }
+*/
 
-.dropbutton {
-    display: inline-block;
+.dropbutton .dropdown {
+    font-size: 16px;
+    border: 1px solid var(--text);
+    outline: none;
+    color: var(--text);
+    padding: .5em .7em .5em 1em;
+    background-color: var(--background);
+    font-family: inherit;
+    margin: 0;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    transition: 0.2s;
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: var(--p);
+    text-align: right;
 }
 
-.dropbutton:hover, .dropbutton:focus {
-    background-color: #2980B9;
-  }
+.dropbutton:hover .dropbutton:focus {
+    background-color: var(--secondary);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--background);
+    background-color: var(--secondary);
+    border-radius: 1rem;
     min-width: 10rem;
+    overflow: auto;
     z-index: 1;
 }
 
 .dropdown-content a {
     color: var(--text);
-    padding: 2rem;
+    padding: 0.8rem;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
-    background-color: var(--secondary);
+.dropdown a:hover {
+    background-color: var(--primary);
+    transition-duration: 0.3s;
 }
-.dropdown:hover .dropdown-content {
-    display: block;
-    border-radius: 2rem;
-    border-color: #180f0f;
-}
-.dropdown:hover .dropbutton {
-    background-color: #3e8e41;
-    border-radius: 2rem;
-    border-color: #180f0f;
-}
+
+.show {display:block;}
 
 .main {
     display: flex;
