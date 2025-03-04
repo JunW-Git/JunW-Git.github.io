@@ -122,8 +122,8 @@ small {font-size: 0.750rem; /* 12px */}
     display: flex;
     flex-direction: wrap;
     background: var(--background);
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
     margin-top: 5rem;
     overflow: hidden;
 }
@@ -132,8 +132,8 @@ small {font-size: 0.750rem; /* 12px */}
     display: flex;
     flex-direction: wrap;
     background: var(--background);
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
     margin-top: 2rem;
     overflow: hidden; 
 }
