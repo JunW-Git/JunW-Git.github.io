@@ -80,7 +80,7 @@ a.dropbutton {
     outline: none;
     color: var(--text);
     padding: .5em 1em;
-    background-color: var(--secondary);
+    background-color: var(--accent);
     font-family: inherit;
     margin: 0;
     border-radius: 10px;
@@ -90,8 +90,8 @@ a.dropbutton {
     white-space: nowrap;
     cursor: pointer;
     text-align: center;
-    text-decoration: none; /* Ensures no underline */
-    display: inline-block; /* Ensures proper button shape */
+    text-decoration: none; 
+    display: inline-block; 
 }
 
 .dropbutton:hover, 
