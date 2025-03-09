@@ -7,6 +7,13 @@
 --accent: #b2ab84;
 }
 
+#grad1 {
+    background-image: linear-gradient(var(--background), var(--secondary));
+}
+#grad2 {
+    background-image: linear-gradient(var(--secondary), var(--background));
+}
+
 body {
   font-family: 'Inter';
   font-weight: 400;
@@ -61,7 +68,7 @@ small {font-size: 0.750rem; /* 12px */}
     padding: .5rem 12%;
     align-items: center;
     position: sticky;
-    background-color: var(--accent);
+    background-color: var(--secondary);
     z-index: 9997;
     border-bottom: 1px solid #0000001a;
 }
@@ -140,8 +147,6 @@ a.dropbutton:focus {
     background: var(--background);
     margin-left: 15rem;
     margin-right: 15rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     overflow: hidden; 
 }
 
